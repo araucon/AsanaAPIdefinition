@@ -9247,8 +9247,8 @@ paths:
           When uploading PDFs with curl, force the content-type to be pdf by
           appending the content type to the file path: `--form
           "file=@file.pdf;type=application/pdf"`.
-        content:
-          multipart/form-data:
+        content:    
+          application/json:
             schema:
               $ref: '#/components/schemas/AttachmentRequest'
       responses:
